@@ -54,5 +54,5 @@ is now appended at the beginning(because of altering parameters)
 #backward elimination algorithm
 
 X_opt = X[: ,[0,1,2,3,4,5]]
-regressor_OLS = sm.OLS(endog=y,exog = x_).fit()
+regressor_OLS = sm.OLS(endog=y,exog = x_opt).fit()
 regressor_OLS.summary()
